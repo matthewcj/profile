@@ -1,0 +1,180 @@
+/* MOBILE VERSION */
+
+body{
+	background-image: url('../img/deer1.jpg');
+	position: absolute;
+	background-size: cover;
+}
+nav{
+	font-family: Source Sans Pro;
+	color: white;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.container-fluid{
+	margin-top: 50px;
+}
+
+.container-fluid h3{
+	font-family: Marck Script;
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	font-size: 28px;
+}
+.h3Kiri1, .h3Kanan1{
+	margin-top: -15px;
+}
+.h3Kiri1{
+	padding-bottom: 30px;
+}
+
+
+/* parralax */
+.h3Kiri, .h3Kanan{
+	opacity: 0;
+	transform: translate(-48px, 0);
+	transition: 1.2s;
+
+}
+.h3Kanan{
+	transform: translate(48px, 0);
+}
+.h3KiriShow, .h3KananShow{
+	opacity: 1;
+	transform: translate(0,0);
+
+}
+.h3Kiri1, .h3Kanan1{
+	opacity: 0;
+	transform: translate(60px, 0);
+	transition: 1.3s;
+
+}
+.h3Kanan1{
+	transform: translate(-60px, 0);
+}
+.h3Kiri1Show, .h3Kanan1Show{
+	opacity: 1;
+	transform: translate(0,0);
+
+}
+.navbaratas{
+	opacity: 0;
+	transform: translate(0, -30px);
+	transition: 1s;
+}
+.navbaratasShow{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.navbarbawah{
+	opacity: 0;
+	transform: translate(0, 50px);
+	transition: 1.2s;
+}
+.navbarbawahShow{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+
+
+
+
+
+
+
+/* TABLET VERSION */
+@media (min-width: 768px) {
+
+}
+
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+	body{
+		background-image: url('../img/deer.jpg');
+		position: absolute;
+		width: 100%;
+		background-size: cover;
+		background-position: 0 /* bagian horizontal  */ -40px; /* bagian vertikal */
+	}
+
+	nav{
+		font-family: Source Sans Pro;
+		color: #B5B0B0;
+		font-style: normal;
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+
+	.navbar-brand{
+		margin-left: 24px;
+		font-size: 20px;
+	}
+	.navbaratas{
+		font-style: normal;
+		font-weight: bold;
+		font-variant: small-caps;
+		margin-right: 23px;
+		font-weight: 700;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.navbaratas:hover::after{
+		content: '';
+		display: block;
+		border-bottom: 2px solid white;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.container-fluid{
+		margin-top: 135px;
+	}
+
+	.container-fluid h3{
+		font-family: Marck Script;
+		font-style: normal;
+		font-weight: normal;
+		color: #CCCBCB;
+		font-size: 28px;
+	}
+	.kiri {
+		padding-right: 300px;
+		margin-left: 80px;
+	}
+	.kanan {
+		padding-left: 200px;
+
+	}
+	.navbarbawah{
+		margin-top: 63px;
+		margin-left: 24px;
+
+		font-family: Source Sans Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+
+		font-variant: small-caps;
+		color: #B5B0B0;
+	}
+	nav p{
+		margin-top: 250px;
+		margin-left: 860px;
+		color: #B5B0B0;
+		font-family: Marck Script;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+	}
+
+}
